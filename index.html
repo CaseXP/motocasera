@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MotoCasera</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>MotoCasera</h1>
+
+  <section id="inicio">
+    <h2>Iniciar Entrega</h2>
+    <button onclick="iniciarEntrega()">Iniciar entrega</button>
+  </section>
+
+  <section id="finalizar">
+    <h2>Finalizar Entrega</h2>
+    <input type="file" accept="image/*" id="foto">
+    <br>
+    <label>Firma (opcional):</label>
+    <canvas id="firmaCanvas" width="300" height="100" style="border:1px solid #000;"></canvas>
+    <br>
+    <button onclick="limpiarFirma()">Limpiar Firma</button>
+    <br>
+    <textarea id="comentario" placeholder="Comentario"></textarea>
+    <br>
+    <button onclick="finalizarEntrega()">Finalizar entrega</button>
+  </section>
+
+  <p id="estado"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
