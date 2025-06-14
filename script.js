@@ -91,7 +91,7 @@ function finalizarEntrega() {
 
 // 📤 Enviar datos a Google Apps Script (Google Sheets)
 function enviarDatos() {
-  const url = "https://script.google.com/macros/s/AKfycbwuKTTy0anN4485vsW8yjJbCRjOt7fRdRvJfqTUnp-djK72obk8Re31zamQCwDzD-U/exec"; // <-- reemplazá esto más adelante
+  const url = "https://script.google.com/macros/s/AKfycbyVbfcT109gl3Uft-dK9fCIH9FeeWQ0YwfaeVLGI6crfto3kN0-Ks8_0nvI5TkYBoY/exec"; // <-- reemplazá esto más adelante
 
   fetch(url, {
     method: "POST",
